@@ -1,0 +1,80 @@
+==> With dry-run
+*** WARNING: You must use ANSICON 1.31 or higher (https://github.com/adoxa/ansicon/) to get coloured output on Windows
+Feature: search customer
+
+  #
+  #Copy Right
+  #
+  Scenario: Search a customer                                                   # search_customer.feature:5
+    Given goes to Customer page search                                          # search_customer.feature:6
+    When I fill the search field                                                # search_customer.feature:7
+    And I click on submit button                                                # search_customer.feature:8
+    Then The search result shows every customer with coincidences in the search # search_customer.feature:9
+
+1 scenario (1 undefined)
+4 steps (4 undefined)
+
+You can implement step definitions for undefined steps with these snippets:
+
+Given(/^goes to Customer page search$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^I fill the search field$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^I click on submit button$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^The search result shows every customer with coincidences in the search$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+==> Without dry-run
+*** WARNING: You must use ANSICON 1.31 or higher (https://github.com/adoxa/ansicon/) to get coloured output on Windows
+Feature: search customer
+
+  #
+  #Copy Right
+  #
+  Scenario: Search a customer                                                   # search_customer.feature:5
+    Given goes to Customer page search                                          # search_customer.feature:6
+    When I fill the search field                                                # search_customer.feature:7
+    And I click on submit button                                                # search_customer.feature:8
+    Then The search result shows every customer with coincidences in the search # search_customer.feature:9
+
+1 scenario (1 undefined)
+4 steps (4 undefined)
+0m0.037s
+
+You can implement step definitions for undefined steps with these snippets:
+
+Given(/^goes to Customer page search$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^I fill the search field$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^I click on submit button$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^The search result shows every customer with coincidences in the search$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+==> Conclusion
+
+-Without --dry-run
+This run all feature with step definition and you see a result with  pass, error,undefined of feature
+
+1 scenario (1 pending)
+4 steps (3 skipped, 1 pending)
+
+-With --dry-run
+This only the file feature
+1 scenario (1 skipped)
+4 steps (4 skipped)
